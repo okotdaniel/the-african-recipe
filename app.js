@@ -7,8 +7,9 @@ app.use(expressLayouts);
 app.set('view engine', 'ejs');
 //routes 
 app.use("/static", express.static(__dirname + "/static"));
+app.use("/static/css", express.static(__dirname + "/static/css"));
 app.use('/', require('./routes/index'));
-app.use('/user', require('./routes/user'));
+app.use('/usersRouter', require('./routes/usersRouter'));
 
 
 //port configurations 
