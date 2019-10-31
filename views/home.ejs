@@ -1,59 +1,8 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">TheAfricanRecipe</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/memberships">Membership</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/recipes">Recipes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/usersRouter/register">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/usersRouter/login">Login</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+<%- include('menu.ejs'); -%>
 <div class="container-fluid jumbotron">
    <p>
     Welcome to Fri Recipe Database 
    </p>
 </div>
 
-<li class="list-item-group"> <a href="/dashboard">Dashboard</a> </li>
-    <li class="list-item-group"> <a href="/profile">Profile</a> </li>
-    <li class="list-item-group"> <a href="/settings">Settings</a> </li>
-    <li class="list-item-group"> <a href="/Notifications">Notifications</a>
-        <li class="list-item-group"> <a href="/logout">Logout</a> </li>
-</div>
-
-<div class="row">
-    <div class="col-xl-6">
-        <div class="col-xl-12">
-            <p> Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quidem reprehenderit 
-            saepe eveniet dolores temporibus quae velit
-            quis tenetur nobis, dolore recusandae animi?
-            Id quasi expedita nam autem, aliquam soluta
-            cumque!Quasi facilis reprehenderit   .</p>
-        </div>
-    </div>
-
-    <div class="col-xl-12">
-            <li class="list-item-group"> <a class="btn btn-secondary" href="/logout">Register</a> </li>
-    </div>
-</div>
+<%- include('footer.ejs'); -%>

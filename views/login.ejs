@@ -1,18 +1,30 @@
-
-<div class="frm">
-        <div class="inner-form">
-                <form>
-                        <div class="input">
-                            <label> user name</label>
-                            <input id="username" type="text" class=""  required>
-                        </div>
-                        <div class="">
-                            <label> password</label>
-                            <input id="password" type="password" class=""  required>
-                        </div>
-                        <div class="">
-                            <button class="login-btn" type="submit" name="action">login </button>
-                        </div>
-                </form>
+<%- include('menu.ejs'); -%>
+<div class=" row mt-5 ">
+        <div class=" col-md-6 m-auto mb-5">
+                <div class="card-body">
+                        <form action="/users/login" method="POST" >
+                            <div class="form-group">
+                                <label> user name</label>
+                                <input 
+                                 name="username"
+                                 type="text"
+                                 placeholder ="enter email adress" 
+                                 class="form-control" 
+                                 required>
+                            </div>
+                            <div class="form-group">
+                                <label> password</label>
+                                <input 
+                                 name="password"
+                                 type="password"
+                                 placeholder ="enter password" 
+                                 class="form-control" 
+                                 required>
+                            </div>
+                                <button class="login-btn  btn btn-primary btn-block" type="submit" name="action">login </button>
+                    </form>
+                </div>
+                <p>Have no Account? <a href="./register">Register</a></p>
         </div>
     </div>
+    <%- include('footer.ejs'); -%>

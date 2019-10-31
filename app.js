@@ -9,8 +9,7 @@ app.set('view engine', 'ejs');
 app.use("/static", express.static(__dirname + "/static"));
 app.use("/static/css", express.static(__dirname + "/static/css"));
 app.use('/', require('./routes/index'));
-app.use('/usersRouter', require('./routes/usersRouter'));
-
+app.use('/users', require('./routes/users'));
 
 //port configurations 
 const PORT = process.env.PORT || 5000 ;
